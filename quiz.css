@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0C114A;
+}
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(fr, 12);
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+.navegacion {
+    grid-column:  1/-1;
+    background: #0C114A;
+    border-bottom: 3px solid orangered;
+    height: 110px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: 'Quicksand';
+    font-weight: bolder;
+
+}
+
+.navegacion img {
+    margin-top: 25px;
+    margin-left: 130px;
+    width: 75px;
+    height: 70px;
+}
+
+.navegacion ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.lista a {
+    text-decoration: none;
+    color: white;
+    margin: 38px;
+    font-size: 18px;
+
+}
+
+.lista .primero {
+    margin-left: 165px;
+}
+
+nav li a:hover {
+    color: orangered;
+    background: none;
+}
+
+.instagram1 img {
+    display: flex;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    margin-left: 120px;
+}
+
+.youtube img {
+    display: flex;
+    margin: auto;
+    width: 26px;
+    height: 26px;
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+.quiz {
+    display: block;
+    text-align: center;
+    padding-bottom: 40px;
+   
+}
+
+.block {
+    display: block;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.quiz2 {
+    display: none;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.caja {
+    float: right;
+    margin-top: 40px;
+    margin-right: 170px;
+}
+.pregunta h1 {
+    color: white;
+    font-family: 'Oswald';
+    margin: 60px;
+    margin-top: 95px;
+    margin-left: 150px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.pregunta .pista {
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 30px;
+    width: 400px;
+    margin-left: 185px;
+}
+
+.pregunta .captura {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 22px;
+    width: 520px;
+    margin-top: 150px;
+    margin-left: 130px;
+
+    background-color: orangered;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.pregunta {
+    float: left;
+}
+
+
+.caja h4 {
+    font-family: 'Quicksand';
+    font-weight: bolder;
+    color: #0C114A;
+    font-size: 30px;
+
+    
+    width: 380px;
+    height: 150px;
+    background-color: whitesmoke;
+    border: 2px solid #0C114A;
+    border-radius: 10px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 34px;
+}
+
+.block h4 {
+    font-family: 'Quicksand';
+    font-weight: bolder;
+    color: #0C114A;
+    font-size: 27.1px;
+
+    
+    width: 380px;
+    height: 150px;
+    background-color: whitesmoke;
+    border: 2px solid #0C114A;
+    border-radius: 10px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 34px;
+}
+
+.caja button {
+    cursor: pointer;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 60px;
+    margin: 20px 0;
+
+    border-radius: 15px;
+    border: 2px solid #0C114A;
+    background-color: white;
+
+    font-family: 'Quicksand';
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: whitesmoke;
+    border: 4px solid darkred;
+}
+
+
+.opciones {
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+
+
+
+/* FORMULARIO CONTACTO */ 
+
+.accesos {
+    width: 100%;
+    background: black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 900px;
+
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+
+.accesos h2 {
+    font-size: 35px;
+    margin: 30px;
+}
+
+.accesos .primer,
+.accesos .segundo,
+.accesos .tercero,
+.accesos .cuarto {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Quicksand';
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.accesos input {
+    margin: 10px 40px;
+
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.tercero textarea {
+    width: 570px;
+    height: 100px;
+
+    margin: 10px 40px;
+
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.cuarto input {
+    width: 80px;
+    margin-top: -5px;
+    margin-bottom: 30px;
+}
+
+.accesos .error {
+    font-size: 15px;
+    color: darkred;
+    display: none;
+}
+
+
+@media screen and (max-width: 411px) {
+
+    .nav {
+        width: 411px;
+        max-width: 351px;
+        height: 40px;
+        margin-top: 5px;
+    }
+    
+    .checkbtn {
+        display: block;
+        margin-left: 50px;
+    }
+    
+    .navegacion img {
+        margin-top: 23px;
+        margin-left: 95px;
+    }
+    
+    nav .lista {
+        position: absolute;
+        display: block;
+        width: 411px;
+        height: 200vh;
+        left: -100%;
+        background: gray;
+        top: 110px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s;
+    
+    
+    }
+    
+    nav .lista li {
+        display: block;
+        margin-top: 10px;
+        line-height: 22px;   
+        width: 411px;
+        height: 87px;
+    }
+    
+    .lista {
+        padding: 37px;
+    }
+    .lista .primero {
+       margin-left: 35px;
+    }
+    
+    .lista .segundo {
+        margin-right: 45px;
+        margin-top: 35px;
+    }
+    
+    .lista .tercero {
+        margin-right: 42px;
+    }
+    
+    .lista .cuarto {
+        margin-right: 45px;
+    }
+    
+    .lista a {
+        font-size: 23px;
+        
+    }
+
+    nav li a:hover {
+        background: none;
+    }
+
+    .instagram1 {
+        display: none;
+    }
+
+    .youtube {
+        display: none;
+    }
+    
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .quiensoy {
+        width: 411px;
+        margin-top: 100px;
+
+    }
+    .quiensoy h2 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        margin-bottom: 70px;
+        margin: auto;
+    
+        font-family: 'Poppins';
+        font-weight: bolder;
+        font-size: 35px;
+        color: #0C114A;
+    }
+    
+
+    .instagram h1 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        width: 335px;
+        margin: auto;
+    }
+
+    .instagram {
+        width: 411px;
+        margin-top: 220px;
+        display: block;
+    }
+    
+    .instagram img {
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+    }
+
+    .contacto {
+        width: 411px;
+        margin-top: 350px;
+    }
+    
+
+    .tercero textarea {
+        width: 350px;
+        height: 100px;
+        background: white;
+        margin: 10px 40px;
+    }
+
+
+    .accesos .primer,
+    .accesos .segundo {
+    display: list-item;
+    list-style: none;
+    width: 250px;
+    height: 200px;
+    margin: auto;
+    }
+
+    /* QUIZ */
+
+    .quiz {
+        display: block;
+        text-align: center;
+        padding-bottom: 40px;
+        width: 411px;
+        height: 960px;
+    }
+
+     
+
+    .pregunta h1 {
+        color: white;
+        font-family: 'Oswald';
+        font-size: 42px;
+        width: 340px;
+        margin-top: 55px;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: uppercase;
+        
+    }
+    
+    .pregunta .pista {
+        font-family: 'Quicksand';
+        font-weight: 600;
+        font-size: 24px;
+        width: 370px;
+        margin-top: -30px;
+        margin-bottom: 60px;
+
+        position: absolute;
+        top: 830px;
+        right: 20px;
+    }
+    
+    .pregunta .captura {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 22px;
+        width: 350px;
+        margin-top: 616px;
+        margin-left: 32px;
+        position: absolute;
+
+        background-color: orangered;
+        border-radius: 20px;
+        padding: 10px;
+
+    }
+    
+    .pregunta {
+        float: none;
+    }
+    
+    .caja {
+        float: none;
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .caja h4 {
+        font-family: 'Quicksand';
+        font-weight: bolder;
+        color: #0C114A;
+        font-size: 30px;
+    
+        
+        width: 350px;
+        height: 150px;
+        background-color: whitesmoke;
+        border: 2px solid #0C114A;
+        border-radius: 10px;
+    
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .caja button {
+        cursor: pointer;
+    
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 340px;
+        height: 60px;
+        margin: 20px 0;
+        margin-left: 11.2px;
+    
+        border-radius: 15px;
+        border: 2px solid #0C114A;
+        background-color: white;
+    
+        font-family: 'Quicksand';
+        font-weight: 600;
+        color: black;
+        font-size: 20px;
+    }
+    
+    .quiz button:hover {
+        background-color: whitesmoke;
+        border: 4px solid darkred;
+    }
+    
+    
+    .opciones {
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+}

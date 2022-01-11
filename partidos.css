@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(fr, 12);
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+.navegacion {
+    grid-column:  1/-1;
+    background: #0C114A;
+    border-bottom: 3px solid orangered;
+    height: 110px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: 'Quicksand';
+    font-weight: bolder;
+    position: fixed;
+
+}
+
+.navegacion img {
+    margin-top: 25px;
+    margin-left: 130px;
+    width: 75px;
+    height: 70px;
+}
+
+.navegacion ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.lista a {
+    text-decoration: none;
+    color: white;
+    margin: 38px;
+    font-size: 18px;
+}
+
+.lista .primero {
+    margin-left: 165px;
+}
+
+nav a:hover {
+    color: orangered;
+}
+
+.instagram img {
+    display: flex;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    margin-left: 120px;
+}
+
+.youtube img {
+    display: flex;
+    margin: auto;
+    width: 26px;
+    height: 26px;
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+.inicio {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #0C114A;
+    font-family: 'Bebas Neue';
+    margin-top: 140px;
+    margin-bottom: 40px;
+
+}
+
+.inicio1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #0C114A;
+    font-family: 'Bebas Neue';
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+}
+
+.partidos {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.proximospartidos {
+    display: block;
+}
+
+.partido1 {
+    background-color: #0C114A;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0 20px;
+
+    border: 4px solid darkred;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.partido2 {
+    background-color: #0C114A;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 20px;
+
+    border: 4px solid darkred;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.partido3 {
+    background-color: #0C114A;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0 20px;
+
+    border: 4px solid darkred;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.partido {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.partido img,
+.partido h3 {
+    margin: 0 10px;
+}
+
+.partido h3 {
+    margin-top: 30px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 40px;
+
+}
+
+.partido img {
+    margin-top: 30px;
+    width: 95px;
+    height: 95px;
+}
+
+.torneo {
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.ultimospartidos {
+    padding-bottom: 60px;
+}
+
+@media screen and (max-width: 411px) {
+
+.nav {
+    width: 100%;
+    max-width: 351px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.checkbtn {
+    display: block;
+    margin-left: 50px;
+}
+
+.navegacion img {
+    margin-left: 95px;
+}
+
+nav .lista {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 300vh;
+    left: -100%;
+    background: gray;
+    top: 110px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+
+
+}
+
+nav ul li {
+    display: block;
+    margin-top: 20px;
+    line-height: 0px;
+    width: 600px;
+}
+
+.lista .primero {
+    margin-left: -155px;
+    margin-top: 83px;
+}
+
+.lista .segundo {
+    margin-right: 235px;
+}
+
+.lista .tercero {
+    margin-right: 237px;
+}
+
+.lista .cuarto {
+    margin-right: 238px;
+}
+
+.lista a {
+    font-size: 23px;
+    
+}
+
+.instagram {
+    display: none;
+}
+
+.youtube {
+    display: none;
+}
+
+
+#check:checked ~ ul {
+    left: 0;
+}
+
+
+
+.inicio {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #0C114A;
+    font-family: 'Bebas Neue';
+    margin-top: 155px;
+    margin-bottom: 40px;
+    width: 411px;
+}
+
+.inicio1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.partido1 {
+    background-color: #0C114A;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    border: 4px solid darkred;
+    border-radius: 10px;
+    width: 390px;
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.partido {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.partido img,
+.partido h3 {
+    margin: 0 10px;
+}
+
+.partido h3 {
+    margin-top: 30px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 50px;
+
+}
+
+.partido img {
+    margin-top: 30px;
+    width: 95px;
+    height: 95px;
+}
+
+.torneo {
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.partido2 {
+    background-color: #0C114A;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    border: 4px solid darkred;
+    border-radius: 10px;
+    width: 390px;
+    margin: 0;
+    margin-left: 10px;
+    
+    margin-top: 40px;
+}
+
+.ultimospartidos {
+    padding-bottom: 60px;
+}
+
+
+}
